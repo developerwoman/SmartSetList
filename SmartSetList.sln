@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSetList", "SmartSetList\SmartSetList.csproj", "{CA94958F-0166-4DCF-9CC8-320AC96B1DA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{CAFBE551-8659-4289-B006-DDAB08864A68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{CEB1E0C2-C480-4352-83C0-ABB02E689C72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA94958F-0166-4DCF-9CC8-320AC96B1DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA94958F-0166-4DCF-9CC8-320AC96B1DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA94958F-0166-4DCF-9CC8-320AC96B1DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA94958F-0166-4DCF-9CC8-320AC96B1DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAFBE551-8659-4289-B006-DDAB08864A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAFBE551-8659-4289-B006-DDAB08864A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAFBE551-8659-4289-B006-DDAB08864A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAFBE551-8659-4289-B006-DDAB08864A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEB1E0C2-C480-4352-83C0-ABB02E689C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEB1E0C2-C480-4352-83C0-ABB02E689C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEB1E0C2-C480-4352-83C0-ABB02E689C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEB1E0C2-C480-4352-83C0-ABB02E689C72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6491C81-2FC2-4B41-B66A-CA1C5019B3AA}
+	EndGlobalSection
+EndGlobal
