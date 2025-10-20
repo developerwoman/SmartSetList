@@ -1,4 +1,4 @@
-﻿namespace Utils
+﻿namespace Config
 {
     public class Class1
     {
