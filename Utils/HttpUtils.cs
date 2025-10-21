@@ -1,6 +1,6 @@
 ﻿namespace Utils
 {
-    public abstract class HttpUtils
+    public class HttpUtils
     {
         public bool WebGet(string Uri, string responseType, string clientId, string Scope, string redirectURI, string State)
         {

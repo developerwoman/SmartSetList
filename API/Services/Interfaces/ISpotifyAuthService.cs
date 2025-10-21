@@ -1,6 +1,6 @@
 ﻿namespace API.Services.Interfaces
 {
-    public interface ISpotifyService
+    public interface ISpotifyAuthService
     {
         public bool RequestUserAuthorization();
         public string RequestToken();

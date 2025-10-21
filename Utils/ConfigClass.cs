@@ -2,25 +2,27 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using static Utils.Constants;
 
-namespace Utils.Config
+namespace Utils
 {
-    public class ConfigClass
+    public static class ConfigClass
     {
         private static IConfiguration? _config;
-        public ConfigClass(IConfiguration configuration)
+
+        public static void Instantiate(IConfiguration config)
         {
-            _config = configuration;
-        }
+            _config = config;            
+        }        
 
         public static string? GetAuthURI()
         {
             if (_config != null)
             {
-                return _config.GetSection("AuthURI").ToString();
+                return _config.GetSection("AuthURI").Value;
             }
             else
             {
@@ -32,7 +34,7 @@ namespace Utils.Config
         {
             if (_config != null)
             {
-                return _config.GetSection("RedirectURI").ToString();
+                return _config.GetSection("RedirectURI").Value;
             }
             else
             {
@@ -43,7 +45,7 @@ namespace Utils.Config
         {
             if (_config != null)
             {
-                return _config.GetSection("TokenURI").ToString();
+                return _config.GetSection("TokenURI").Value;
             }
             else
             {
@@ -54,7 +56,7 @@ namespace Utils.Config
         {
             if (_config != null)
             {
-                return _config.GetSection("GrantType").ToString();
+                return _config.GetSection("GrantType").Value;
             }
             else
             {
@@ -65,7 +67,7 @@ namespace Utils.Config
         {
             if (_config != null)
             {
-                return _config.GetSection("ClientSecret").ToString();
+                return _config.GetSection("ClientSecret").Value;
             }
             else
             {
@@ -77,7 +79,7 @@ namespace Utils.Config
 
             if (_config != null)
             {
-                return _config.GetSection("ClientID").ToString();
+                return _config.GetSection("ClientID").Value;
             }
             else
             {
@@ -90,7 +92,7 @@ namespace Utils.Config
         {
             if (_config != null)
             {
-                return _config.GetSection("Scope").ToString();
+                return _config.GetSection("Scope").Value;
             }
             else
             {

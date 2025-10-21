@@ -1,3 +1,7 @@
+using API.Services;
+using API.Services.Interfaces;
+using Utils;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +10,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<ISpotifyAuthService, SpotifyAuthService>();
 
 var app = builder.Build();
 

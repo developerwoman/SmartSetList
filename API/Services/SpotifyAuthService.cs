@@ -1,13 +1,12 @@
 ﻿using API.Services.Interfaces;
 using RandomString4Net;
 using Utils;
-using Utils.Config;
 
 namespace API.Services
 {
-    public class SpotifyAuthService : ISpotifyService
+    public class SpotifyAuthService : ISpotifyAuthService
     {
-        private HttpUtils _utils;
+        private HttpUtils _utils = new HttpUtils();
         private string _uriRequestAuthorization;
         private string _uriGetToken;
         private string _redirectURI;
@@ -17,11 +16,12 @@ namespace API.Services
         private string _state = RandomString.GetString(Types.ALPHABET_LOWERCASE, 15);
         private string _scope;
         private string _grantType;
-        private ConfigClass _confClass;
-        public SpotifyAuthService(HttpUtils utils, ConfigClass confClass)
+        private readonly IConfiguration _configuration;
+
+        public SpotifyAuthService(IConfiguration configuration)
         {
-            _utils = utils;
-            _confClass = confClass;
+            _configuration = configuration;
+            ConfigClass.Instantiate(_configuration);
             _uriRequestAuthorization = ConfigClass.GetAuthURI();
             _redirectURI = ConfigClass.GetRedirectURI();
             _clientId = ConfigClass.GetClientId();
@@ -29,6 +29,7 @@ namespace API.Services
             _clientSecret = ConfigClass.GetClientSecret();
             _uriGetToken = ConfigClass.GetTokenURI();
             _grantType = ConfigClass.GetGrantType();
+            _configuration = configuration;
         }
         public bool RequestUserAuthorization()
         {
