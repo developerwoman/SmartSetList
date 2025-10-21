@@ -102,3 +102,15 @@
 /Utils/obj/Utils.csproj.nuget.dgspec.json
 /.vs/SmartSetList/DesignTimeBuild/.dtbcache.v2
 /.vs
+/.vs/SmartSetList/v17/.futdcache.v2
+/API/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/API/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/API/bin/Debug/net8.0/RandomString4Net.dll
+/API/bin/Debug/net8.0/Utils.dll
+/API/bin/Debug/net8.0/Utils.pdb
+/API/obj/Debug/net8.0/API.csproj.BuildWithSkipAnalyzers
+/API/obj/Debug/net8.0/ApiEndpoints.json
+/API/obj/Debug/net8.0/EndpointInfo/API.json
+/API/obj/Debug/net8.0/EndpointInfo/API.OpenApiFiles.cache
+/API/obj/Debug/net8.0/rpswa.dswa.cache.json
+/Utils/obj/Debug/net8.0/Utils.csproj.BuildWithSkipAnalyzers
