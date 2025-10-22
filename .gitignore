@@ -130,3 +130,7 @@
 /SmartSetList/bin/Debug/net8.0/Utils.dll
 /SmartSetList/bin/Debug/net8.0/Utils.pdb
 /SmartSetList/SmartSetList.csproj.user
+obj
+debug
+bin
+*.user
