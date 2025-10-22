@@ -1,4 +1,5 @@
-﻿using API.Services;
+﻿using API.Entities;
+using API.Services;
 using API.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,6 +23,14 @@ namespace API.Controllers
         {
             var ret = _spotifyAuthService.RequestUserAuthorization();
             return "oi";
+        }
+        [HttpPost]
+        public AcessToken RequestToken()
+        {
+            var ret = _spotifyAuthService.RequestToken();
+
+            AcessToken token = new AcessToken();
+            return token;
         }
     }
 }

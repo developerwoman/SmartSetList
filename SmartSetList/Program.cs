@@ -1,7 +1,19 @@
+using API.Services;
+using API.Services.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<ISpotifyAuthService, SpotifyAuthService>();
+var apiAppSettings = @"C:/Users/Suporte/source/repos/SmartSetList/API/appsettings.json";
+
+
+//C: \Users\Suporte\source\repos\SmartSetList\API\appsettings.json
+
+
+
+builder.Configuration.AddJsonFile(apiAppSettings, optional: false, reloadOnChange: true);
 
 var app = builder.Build();
 
@@ -22,6 +34,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Spotify}/{action=Login}/{id?}");
 
 app.Run();

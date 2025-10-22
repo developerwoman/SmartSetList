@@ -22,7 +22,7 @@ namespace Utils
         {
             if (_config != null)
             {
-                return _config.GetSection("AuthURI").Value;
+                return _config.GetSection("Spotify:AuthURI").Value;
             }
             else
             {
@@ -79,7 +79,7 @@ namespace Utils
 
             if (_config != null)
             {
-                return _config.GetSection("ClientID").Value;
+                return _config.GetSection("Spotify:ClientID").Value;
             }
             else
             {
