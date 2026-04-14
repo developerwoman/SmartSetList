@@ -134,3 +134,6 @@ obj
 debug
 bin
 *.user
+/Utils/obj/Debug/net8.0/Utils.GlobalUsings.g.cs
+/Utils/obj/Debug/net8.0/Utils.GlobalUsings.g.cs
+/Utils/obj/Debug/net8.0/Utils.GeneratedMSBuildEditorConfig.editorconfig

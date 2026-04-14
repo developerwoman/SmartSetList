@@ -6,11 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ISpotifyAuthService, SpotifyAuthService>();
-var apiAppSettings = @"C:/Users/Suporte/source/repos/SmartSetList/SmartSetList.Spotify/appsettings.json";
-
-
-//C: \Users\Suporte\source\repos\SmartSetList\API\appsettings.json
-
+var apiAppSettings = @"C:/Users/a.regato.azevedo/source/repos/SmartSetList/SmartSetList.Spotify/appsettings.json";
 
 
 builder.Configuration.AddJsonFile(apiAppSettings, optional: false, reloadOnChange: true);
